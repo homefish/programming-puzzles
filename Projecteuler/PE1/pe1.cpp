@@ -1,3 +1,14 @@
+// solution to https://projecteuler.net/problem=1
+// written in C++ 4.9.3
+//
+// Usage:
+// Open a linux terminal and compile the file with
+// g++ pe1.cpp -O2 -std=c++11 -o pe1.out
+//
+// Run the binary file pe1.out with
+// ./pe1.out
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

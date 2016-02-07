@@ -1,0 +1,20 @@
+We calculate the terms of the Fibonacci sequence iteratively with a loop.
+
+Steps:
+We initialize a variable total = 2 since at the beginning we start with the terms 1 and 2, 
+and 2 is an even number.
+
+The Fibonacci sequence is 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, etc..
+Let's write variables a, b and c below the sequence to indicate the calculation:
+
+1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ..
+a  b  c
+
+We calculate the sum c = a + b, which is the next Fibonacci term after a and b, and move the variables one step to the right:
+
+1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ..
+   a  b  c
+   
+We repeat this step until c exceeds the upper bound of four million.
+At each step we check whether c is even. If c is even we add it to our total,
+otherwise omit it.

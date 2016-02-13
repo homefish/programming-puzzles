@@ -1,0 +1,17 @@
+Solution to https://projecteuler.net/problem=3
+
+Idea: 
+Let n = p1^k1 * p2^k2 * ... * pm^km be the prime factorization of n.
+Then the largest prime factor can be determined as follows.
+
+- Case 1: All prime factors are at most sqrt(n). Then the largest prime factor 
+is among the numbers from 2 to sqrt(n).
+
+- Case 2: At least one prime factor is greater than sqrt(n).
+Then there can only be exactly one prime factor greater than sqrt(n). 
+Otherwise, if we had two prime factors greater
+than sqrt(n), let's call them a and b, their product a*b would be greater than n
+which is a contradiction. So n takes the form
+n = p1^k1 * p2^k2 * ...p_{m-1}^k_{m-1} * pm
+with p1, ..., p_{m-1} at most sqrt(n) and pm greater than sqrt(n). pm is the largest
+prime factor.

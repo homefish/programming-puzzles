@@ -26,7 +26,7 @@ int main() {
     int res = 0;
     
     for (int i=100; i<1000; i++) {
-        for (int k=i+1; k<1000; k++) {
+        for (int k=i; k<1000; k++) {
             int p = i * k;
             if (is_pali(p)) {
                 res = max(res, p);

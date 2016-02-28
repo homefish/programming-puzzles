@@ -11,7 +11,7 @@ from sys import stdout
 def main():
     res = 0
     for i in range(100, 1000):
-        for k in range(i+1, 1000):
+        for k in range(i, 1000):
             p = i * k
             s = str(p)
             if s == s[::-1]:

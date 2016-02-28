@@ -1,0 +1,13 @@
+We compute the product p = i * k, where i and k are 3 digit numbers
+and check if p is a palindrome.
+
+To check if p is a palindrome we convert p to a string s
+and compare s to reverse(s).
+
+In Python this can be done with 
+s = str(p)
+s == s[::-1], 
+
+and in C++11 this can be done with 
+string s = to_string(p)
+s == string(s.rbegin(), s.rend()).
